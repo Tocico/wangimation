@@ -1,0 +1,585 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond',serif;
+    
+}
+
+
+
+/*mobile*/
+
+header img{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+/* slideshow */
+.swiper-slide img{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+  
+}
+
+
+.swiper-button-next, .swiper-button-prev{
+    display: none;
+}
+
+.swiper-pagination-bullet {
+    width: 30px;
+    background: transparent;
+    color: #222121;
+    font-size: 13px;
+    line-height: 16px;
+    font-family: 'Pinyon Script', cursive;
+}
+.swiper-pagination-bullet-active {
+    background-color: transparent;
+    color: #000000;
+}
+
+.swiper-pagination{
+    position: inherit;
+}
+
+.swiper-container-horizontal >.swiper-pagination-bullets{
+     margin-top: 6%;
+}
+
+
+/* intro */
+.container1 p{
+    width: 90%;
+}
+.container1{
+    display: flex;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.button a{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid black;
+    color: rgb(0, 0, 0);
+    padding: 0.5em 1.5em;
+    letter-spacing: 0.1em;
+}
+
+
+
+
+.button a:hover {
+    color: white;
+    background-color: #b89671;
+}
+
+
+
+
+/* about */
+.bouquet{
+    display: none;
+}
+
+.about h2{
+    font-family: 'Playfair Display SC', serif; 
+    letter-spacing: 0.2em;
+    font-size: 1.3em;
+    margin: 0.3em 0;
+}
+
+.about p{
+    width: 85%;
+    margin: 0.3em 0;
+}
+
+.container{
+    max-width: 100%;
+    background-position: center center;
+    margin: 0;
+    padding: 1em 1em;
+}
+
+.about{
+    background-color:#dac7b1;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1em 0;
+}
+
+
+
+/* subscribe */
+.wrap{
+    margin: 0;
+    padding: 2.5em 1em;
+    max-width: 100%;
+}
+
+.access{
+    position: relative;
+    max-width: 100%;
+    min-height: 20em;
+    /* padding: 1em ; */
+}
+
+
+.bg-img{
+    background-image: url(./img/foto1_small.jpg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+}
+
+.toGet{
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    left: 7%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform : translateY(-50%);
+    transform : translateY(-50%);
+    width: 86%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+  
+}
+
+
+
+.sub, .line{
+    margin: 0.1em 0;
+    font-size: 1.2em;
+    font-family: 'Playfair Display SC', serif; 
+    letter-spacing: 0.3em;
+    text-align: center;
+}
+
+.text{
+    margin: 0.1em 0;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+}
+
+.line{
+background-color: black;
+margin: 0.5em 0;
+width: 1px;
+height: 1.3rem;
+}
+
+input[type=mail]{
+    border: none;
+    border-bottom: 1px solid rgba(5, 5, 5, 0.87);
+    font-size: 1em;
+    color: rgba(0,0,0,.5);
+    margin: 20px 0;
+    font-family: 'Cormorant Garamond',serif;
+    width: 200px;
+}
+
+input[type=submit]{
+    font-family: 'Cormorant Garamond',serif;
+    border: none;
+    color: rgba(253, 253, 253, 0.87);
+    background-color: #b89671;
+    margin: 10px 0;
+    letter-spacing: 0.1em;
+    padding: 0.6em;
+    width: 40%;
+    
+}
+
+.submit{
+    text-align: right;
+} 
+
+footer h4{
+   text-align: center;
+   font-size: 0.4em;
+}
+
+
+
+
+@media screen and (min-width: 425px) {
+    .swiper-pagination-bullet {
+        width: 30px;
+        font-size: 13px;
+    }
+ 
+    
+    .container1 p{
+        letter-spacing: 0.2em;
+        width: 74%;
+    }
+    .about p{
+        width: 87%;
+    }
+
+    input[type=mail]{
+        width: 220px;
+    }
+}
+@media screen and (min-width: 510px) {
+    .swiper-wrapper img{
+       display: inherit; 
+       width: 100%;       
+    }
+    .swiper-pagination-bullet{
+        width: 43px;
+        font-size: 16px;
+    }
+  
+    input[type=mail]{
+        width: 300px;
+    }
+    input[type=submit]{
+        width: 30%;
+    }
+} 
+
+/*Ipad*/
+@media screen and (min-width: 768px) {
+    header img{
+        width: 30%;
+    }
+
+    .swiper-container{
+        width: 97%;
+    }
+
+    .swiper-pagination-bullet {
+        width: 51px;
+        background: transparent;
+        color: #222121;
+        font-size: 20px;
+        line-height: 16px;
+        font-family: 'Pinyon Script', cursive;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: transparent;
+        color: #000000;
+    }
+    
+    .swiper-pagination{
+        position: inherit;
+    }
+    
+    .swiper-container-horizontal >.swiper-pagination-bullets{
+         margin-top: 3%;
+    }
+    
+    .swiper-button-next, .swiper-button-prev{
+        display: block;
+        top:93%;
+        width: 55px;
+    }
+    
+    .swiper-button-prev{
+        background-image: inherit;
+        left: 17%;
+    }
+    
+    .swiper-button-prev:before{
+       
+            position: absolute;
+            content: '';
+            bottom: 16px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border: none;
+            border-left: solid 20px transparent;
+            border-bottom: solid 7px rgb(0, 0, 0);
+          }
+    .swiper-button-prev:after {
+            position: absolute;
+            content: '';
+            bottom: 16px;
+            left: 10px;
+            width: 89%;
+            border-bottom: solid 1px rgb(2, 2, 2);
+          }
+    
+    .swiper-button-next{
+        background-image: inherit;
+        right: 17%;
+    }
+    
+    .swiper-button-next:before{
+       
+            position: absolute;
+            content: '';
+            bottom: 16px;
+            right: 0;
+            width: 0;
+            height: 0;
+            border: none;
+            border-right: solid 20px transparent;
+            border-bottom: solid 7px rgb(0, 0, 0);
+          }
+    .swiper-button-next:after {
+            position: absolute;
+            content: '';
+            bottom: 16px;
+            right: 10px;
+            width: 89%;
+            border-bottom: solid 1px rgb(2, 2, 2);
+          }
+
+       
+
+    .container1 p{
+        width: 59%;
+    }
+
+    .bouquet{
+        display: block;
+        width: 78%;
+        height: 10%;
+        margin: 5% -21%;
+    }
+
+
+    
+    .container{
+        background-color:#dac7b1;
+        margin: 18px;
+        display: flex;
+        flex-direction: row;
+        margin-left: 124px;
+    }
+ 
+    .about{
+        background-color: inherit;
+        width: 50%;
+        margin-left: 10%;
+
+    }
+
+    .about p{
+        width: 95%;
+    }
+
+
+
+
+
+    
+   
+
+    .bg-img{
+        background-image: url(./img/foto1.jpg);
+        width: 100%;
+    min-height: 25em;
+    }
+
+    .toGet{
+        padding: 3em 2em;
+        width: 20em;
+        top: 63%;
+        left: 50%;
+
+    }
+
+    input[type=mail]{
+        width: 250px;
+    }
+
+    footer h4{
+        font-size: 0.6em;
+    }
+ }
+
+
+
+/*Desktop*/
+@media screen and (min-width: 1024px) {
+    header img{
+        width: 20%;
+    }
+
+    
+
+    .swiper-button-next, .swiper-button-prev{
+        top:95%;
+        width: 90px;
+    }
+
+    .box{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .container1 p{
+        font-size: 1.6em;
+        letter-spacing: 0.1em;
+        width: 59%;
+    }
+
+    .button a{
+        font-size: 1.4em;
+    }
+    
+    .about h2{
+        font-size: 2.5em;
+    }
+
+    .about p{
+        font-size: 1.4em;
+        width: 85%;
+    }
+    .container{
+        margin: 65px 72px;
+        margin-left: 133px;
+    }
+
+   .bouquet{
+        width: 59%;
+        margin: 5% -12%;
+    }
+
+
+    .wrap{
+        width: 90%;
+            padding-bottom: 9.5em;
+    }
+
+    .bg-img{
+        min-height: 30em;
+        background-size: inherit;
+        left: 5%;
+    }
+
+    .toGet{
+        padding: 3em 2em;
+        width: 25em;
+        top: 76%;
+        left: 50%;
+    }
+
+    .sub{
+        font-size: 2em;
+    }
+
+    .text{
+        font-size: 1.7em;
+    }
+
+    input[type=mail]{
+        width: 300px;
+        font-size: 1.5em;
+        margin-top: 30px;
+    }
+    
+    input[type=submit]{
+        width: 40%;
+        font-size: 1.3em;
+    }
+
+
+
+    
+    footer h4{
+        margin-top: 10%;
+        font-size: 1em;
+    }
+ }
+
+ @media screen and (min-width: 1440px) {
+    .swiper-pagination-bullet{
+        font-size: 25px;
+        width: 100px;
+    }
+
+    .swiper-button-next, .swiper-button-prev{
+        width: 90px;
+    }
+     
+    .container1 p{
+        font-size: 1.8em;
+        line-height: 1.6em;
+        width: 45%;
+        margin-top: 6%;
+
+    }
+
+    .button a{
+        font-size: 1.6em;
+    }
+
+
+    .container{
+        margin: 100px 156px;
+        margin-left: 211px;
+    }
+
+    .about p{
+    font-size: 1.6em;
+    width: 80%;
+    line-height: 1.4em;
+    }
+
+     .bg-img{
+         min-height: 35em;
+     }
+    .toGet{
+        top: 90%;
+        left: 56%;
+    }
+    
+
+ }
+
+ @media screen and (min-width: 1700px) {
+    .swiper-pagination-bullet{
+        font-size: 40px;
+        width: 130px;
+    }
+
+    .swiper-button-next, .swiper-button-prev{
+        width: 120px;
+    }
+     .box{
+         width: 76%;
+     }
+
+     .swiper-button-next, .swiper-button-prev{
+        top:97%;
+    }
+    
+
+ }
+
+
+
